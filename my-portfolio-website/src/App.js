@@ -28,8 +28,8 @@ function App() {
     }
   };
 
-  const mainProjects = ["/project1.jpg","/project2.jpg","/project3.jpg","/project4.jpg","/project5.jpg","/project6.jpg"];
-  const moreProjects = ["/project7.jpg","/project8.jpg","/project9.jpg"];
+ const mainProjects = [`${process.env.PUBLIC_URL}/project1.jpg`,`${process.env.PUBLIC_URL}/project2.jpg`,`${process.env.PUBLIC_URL}/project3.jpg`,`${process.env.PUBLIC_URL}/project4.jpg`,`${process.env.PUBLIC_URL}/project5.jpg`,`${process.env.PUBLIC_URL}/project6.jpg`];
+const moreProjects = [`${process.env.PUBLIC_URL}/project7.jpg`,`${process.env.PUBLIC_URL}/project8.jpg`,`${process.env.PUBLIC_URL}/project9.jpg`];
 
   return (
     <div className="bg-gradient-to-br from-[#0d0d0d] via-[#1a1a2e] to-[#16213e] text-gray-200 font-sans">
@@ -76,9 +76,9 @@ function App() {
   <div className="md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0 relative z-10">
     <div className="relative w-56 sm:w-64 lg:w-72 h-72 sm:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(236,72,153,0.5)] hover:scale-105 transition-transform duration-500">
       <img
-        src="/profile.jpg"
-        alt="Profile"
-        className="w-full h-full object-cover"
+            src={`${process.env.PUBLIC_URL}/profile.jpg`}
+            alt="Profile"
+                  className="w-full h-full object-cover"
       />
     </div>
   </div>
